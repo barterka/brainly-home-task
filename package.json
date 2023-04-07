@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear:cypress": "rm -rf cypress/videos/* && rm -rf cypress/screenshots/*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^12.9.0"
+    "cypress": "^12.9.0",
+    "cypress-commands": "^3.0.0",
+    "faker": "^5.5.3"
   }
 }
