@@ -2,7 +2,7 @@
 
 describe('Delete contacts via UI', () => {
     beforeEach('Login', () => {
-        cy.appLogin()
+        cy.appLogin(Cypress.env('Email'), Cypress.env('Password'))
     })
 
     it('Identifies and deletes first row of contact table', () => {

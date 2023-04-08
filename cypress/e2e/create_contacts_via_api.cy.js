@@ -5,7 +5,8 @@ describe('Create contacts via API', () => {
     before(() => {
     cy.clearLocalStorage();
     cy.clearCookies();
-    cy.appLogin();
+    Cypress.env();
+    cy.appLogin(Cypress.env('Email'), Cypress.env('Password'));
     });
 
     it('Creates 10 user contacts', () => {
