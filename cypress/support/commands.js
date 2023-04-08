@@ -12,9 +12,7 @@ Cypress.Commands.add('signUp', (email, password) => {
 //Command logging in to the app
 Cypress.Commands.add('appLogin', (email, password) => {
     cy.visit('/')
-    cy.log(`Email: ${Cypress.env('Email')}`)
     cy.get('#email').type(Cypress.env('Email'))
-    cy.log(`Password: ${Cypress.env('Password')}`)
     cy.get('#password').type(Cypress.env('Password'))
     cy.get('#submit').click()
  });
