@@ -16,5 +16,3 @@ Cypress.Commands.add('appLogin', (email, password) => {
     cy.get('#password').type(Cypress.env('Password'))
     cy.get('#submit').click()
  });
-
-import 'cypress-commands';
